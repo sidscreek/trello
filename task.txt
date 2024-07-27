@@ -1,0 +1,49 @@
+**The application should have the following features:**
+
+1. User Authentication:
+    - Implement signup and login functionality using email and password
+    - Ensure secure password storage and user session management
+2. Task Board:
+    - Upon logging in, users should see their personal task board
+    - The board should have four columns: "To-Do", "In Progress", “Under Review” and "Completed"
+3. Task Management:
+    - Users can create new tasks in any column
+    - Each task should have
+        - A title (mandatory)
+        - A description (not mandatory to fill)
+        - Status (mandatory)
+            - Automatically fill if card created from buttons in specific section
+        - Priority (not mandatory)
+            - Values for priority - Low, Medium, Urgent
+        - Deadline (not mandatory
+    - Users can edit and delete tasks after creation
+4. Drag and Drop Functionality:
+    - Implement drag and drop feature to move tasks between columns
+    - The task's status should update automatically when moved to a different column
+5. Data Persistence:
+    - All user data (account information and tasks) must be stored in a database
+
+    //flow : page.tsx => conatins the main program code 
+
+    //first figure out the routing 
+    //create dynamic routes -> exameple : for a specific user id create a route 
+    //how can you create a dynamic route ? 
+    //next has this property of using [] to create a dynamic route 
+    //whatever is dynamic should go inside that part 
+    //ex: id => dynamic route 
+    //how to fetch this id ?
+    every page inside the app folder is a server component 
+    //server component has some special features like you can access the params 
+//every folder we create inside the next 13 will become a route 
+app -> (test) => you cant access this through url , will give 404 code 
+app -> (test) -> something => you can access this through url
+
+so what is the use of (test) => since there are many routes in our project and we want to group
+them under one hood/folder we use (test) , which is not accesible through url
+create a layout.tsx file inside the (user) 
+now (user) contains many subfolders (other) / (something)
+//to access the url by specifying these keywords we use this method
+
+//layout.tsx create layouts for specific routes inside the (user) folder
+//like if we want a navabr component across all our routes we can use this concept 
+app -> (test) -> specify the navbar component -> {children} => navbar component will be present in all these routes
