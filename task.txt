@@ -47,3 +47,54 @@ now (user) contains many subfolders (other) / (something)
 //layout.tsx create layouts for specific routes inside the (user) folder
 //like if we want a navabr component across all our routes we can use this concept 
 app -> (test) -> specify the navbar component -> {children} => navbar component will be present in all these routes
+so this is how we can seprate reuse our components in the project 
+//we have deleted the folders , this was used for just explanation 
+
+yout main layout would be 
+
+navabr 
+
+children 
+
+footer 
+
+
+we are using shadcn-ui for creating buttons => all the components will be insdie the components folder
+
+
+think in terms of reusable components npw 
+keep a ui folder for all the shadcn ui components 
+and all the assests would be in public folder 
+
+create a reusable component for logo
+
+__componets : this is a folder which is completely inaccessible 
+even if we create a file page.tsx inside it 
+//it wont be accessible through url unless we import in into the page 
+//our logo will redirect us to our page
+
+
+to change the favicon , make the changes inside the main layout 
+
+AUTHENTICATION : we will be using clerk for auth 
+//install clerk
+give all the permission 
+copy the env variables and paste them in .env file 
+//go to gitignore and add .env so that it does not get committed to github
+
+create another file (platform) and there use <ClerkProvider></ClerkProvider>
+
+//now create a middleware 
+create a new file middleware.ts and update details there
+
+//look at the documentation and update all the necessary changes 
+
+
+after all the setting up of /sign-in & /sign-up
+update the middleware routes 
+
+NOTE: if we are dealing with client side components we will be requiring hooks 
+so everything we have to destructure it 
+
+
+now i want that as soon as i login i want to redirect to the main dashboard with my name 
