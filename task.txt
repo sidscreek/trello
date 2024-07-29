@@ -98,3 +98,32 @@ so everything we have to destructure it
 
 
 now i want that as soon as i login i want to redirect to the main dashboard with my name 
+
+
+incase you are having problem with middlware , update the code as per your requirements and update routes and create route matchers as well
+
+//javascript interview qs 
+//react js interview qs
+
+//SIDEBAR 
+create a wrapper where you will create a sidebar 
+the sidebar will also be pushed to the url
+libraries used 
+usehooks-ts (if you want to use localStorage)
+shadcn-skeleton //to show a placeholder when its loading 
+
+
+koi bhi naya component create karoge toh uska props bhi usme daalna padega using interface
+
+
+//MOBILE SIDEBAR 
+first create a hook which will use the state of the navabr
+create a function to toggle the sidebar state
+use conditional rendering to display the state of the sidebar 
+style it 
+navbar with a toggle button
+
+use zustand for state management 
+
+note: if we want a specific component to run only on client and not on server or anywhere else 
+we use useEffect() . useEffect() will not run at server side rendering iteration
