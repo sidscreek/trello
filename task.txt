@@ -127,3 +127,16 @@ use zustand for state management
 
 note: if we want a specific component to run only on client and not on server or anywhere else 
 we use useEffect() . useEffect() will not run at server side rendering iteration
+
+
+//SERVER SIDE ACTIONS 
+we will be using prisma to interact with the data seamlessly
+//connection with mongo db 
+//create a new databse 
+//create a new cluster 
+Mathematics@18 : Password 
+sidscreek : username
+//connect that cluster by installing mongo db ( npm i mongodb)
+//choose the runtime environment node js and latest version
+url : mongodb+srv://sidscreek:Mathematics@18@dev-cluster.xdims4t.mongodb.net/?retryWrites=true&w=majority&appName=dev-cluster
+replace the username and password for next further use and add the db name which is trello 
