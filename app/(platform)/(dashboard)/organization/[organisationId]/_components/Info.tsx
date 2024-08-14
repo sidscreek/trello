@@ -50,7 +50,6 @@ Info.Skeleton = function SkeletonInfo(){
                 <div className="flex items-center ">
                     <Skeleton className="h-4 w-4 mr-2"/>
                     <Skeleton className="h-4 w-[100px]"/>
-
                 </div>
             </div>
         </div>
